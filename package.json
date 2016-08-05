@@ -2,8 +2,17 @@
   "name": "eslint-plugin-async",
   "version": "0.1.0",
   "description": "",
-  "keywords": [],
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "eslintplugin",
+    "async"
+  ],
   "main": "index.js",
+  "files": [
+    "rules",
+    "index.js"
+  ],
   "scripts": {
     "lint": ":",
     "test": "npm run lint && ava --verbose"
