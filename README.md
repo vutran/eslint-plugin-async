@@ -10,9 +10,14 @@ $ npm install --save-dev eslint-plugin-async
 
 ## Configuration
 
+Edit your `.eslintrc`
+
 ```json
 {
-  "plugins": ["async"]
+  "plugins": ["async"],
+  "rules": {
+    "async/missing-await-in-async-fn": 1
+  }
 }
 ```
 
