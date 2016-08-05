@@ -4,6 +4,7 @@ import rule from '../rules/missing-await-in-async-fn';
 
 const tester = new RuleTester(test);
 
+const errorMessage = 'Missing await in async function.';
 const parser = 'babel-eslint';
 const parserOptions = { ecmaVersion: 6 };
 const errors = message => [{ message }];
@@ -21,8 +22,8 @@ tester.run('missing-await-in-async-fn', rule, {
     check('const foo = async () => await bar();'),
   ],
   invalid: [
-    check('async function foo() { return bar(); };', 'Missing await in async function.'),
-    check('const foo = async () => { return bar(); };'),
-    check('const foo = async () => bar();'),
+    check('async function foo() { return bar(); };', errorMessage),
+    check('const foo = async () => { return bar(); };', errorMessage),
+    check('const foo = async () => bar();', errorMessage),
   ],
 });
