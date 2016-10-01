@@ -1,3 +1,5 @@
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 # eslint-plugin-async
 
 > async/await linting rules for ESLint
