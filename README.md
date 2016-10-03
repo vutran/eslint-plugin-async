@@ -1,5 +1,7 @@
 # eslint-plugin-async
 
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 > async/await linting rules for ESLint
 
 ## Install
